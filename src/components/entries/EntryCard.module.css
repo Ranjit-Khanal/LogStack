@@ -1,0 +1,161 @@
+.card {
+  position: relative;
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+  margin-bottom: 40px;
+  transition: border-color var(--transition);
+}
+
+.card:hover {
+  border-left-color: var(--accent);
+}
+
+.dateLine {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  position: absolute;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  border: 2px solid var(--bg);
+  transition: background var(--transition);
+}
+
+.card:hover .dot {
+  background: var(--accent);
+}
+
+.date {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+}
+
+.actionBtn {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  background: none;
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: all var(--transition);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.actionBtn:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.actionBtn.danger:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accentSection .sectionContent,
+.accentSection .markdown {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sectionContent {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.markdown {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.markdown p { margin-bottom: 8px; }
+.markdown code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--accent);
+}
+.markdown pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  overflow-x: auto;
+  margin-bottom: 8px;
+}
+.markdown pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text);
+}
+.markdown ul, .markdown ol { padding-left: 20px; margin-bottom: 8px; }
+.markdown h1, .markdown h2, .markdown h3 {
+  color: var(--text);
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.expandBtn {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  background: none;
+  border: none;
+  padding: 0;
+  transition: color var(--transition);
+  text-align: left;
+}
+
+.expandBtn:hover {
+  color: var(--accent);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
