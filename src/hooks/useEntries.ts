@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient, keepPreviousData } from '@tanstack/react-query';
 import { entriesApi } from '../api';
 
-interface EntriesParams {
+export interface EntriesParams {
   page?: number;
   limit?: number;
   tags?: string;

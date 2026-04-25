@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useAuthStore } from '../store/authStore';
+import { EntriesParams } from '../hooks/useEntries';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
@@ -50,7 +51,7 @@ export const authApi = {
 // ─── Entries ─────────────────────────────────────────────────────────────────
 
 export const entriesApi = {
-  getAll: async (params: Record<string, unknown> = {}) => {
+  getAll: async (params: EntriesParams = {}) => {
     const res = await api.get('/entries', { params });
     return res.data;
   },
