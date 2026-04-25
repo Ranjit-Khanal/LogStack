@@ -32,7 +32,7 @@ export default function LoginPage() {
   return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <div className={styles.logo}>◈ DevJournal</div>
+        <div className={styles.logo}>◈ LogStack</div>
         <h1 className={styles.title}>Welcome back</h1>
         <p className={styles.sub}>Log in to your learning journal</p>
 

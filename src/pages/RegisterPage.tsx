@@ -36,7 +36,7 @@ export default function RegisterPage() {
   return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <div className={styles.logo}>◈ DevJournal</div>
+        <div className={styles.logo}>◈ LogStack</div>
         <h1 className={styles.title}>Start your journey</h1>
         <p className={styles.sub}>Create your free learning journal</p>
 

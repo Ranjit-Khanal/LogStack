@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <Link to="/dashboard" className={styles.logo}>
           <span className={styles.logoIcon}>◈</span>
-          <span>DevJournal</span>
+          <span>LogStack</span>
         </Link>
 
         <div className={styles.links}>
